@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dona Torta Caruaru - Site de Lanches</title>
+    <meta name="description" content="Encomenda de lanches na cidade de Caruaru">
+    <meta name="keywords" content="Lanches, Comidas, Entrega">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Juan Axel">
+    <link rel="stylesheet" href="_css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,700&family=Nunito:wght@700&family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="icon" href="_imagens/icon.png">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="menu">
+            <a class="btnClose"> <i class="fa fa-times"></i> </a>
+            <button class="btnLogin"> <i class="fas fa-address-card"></i> </button>
+            <ul>
+                <li> <a href="#">Home</a> </li>
+                <li> <a href="#">Contato</a> </li>
+                <li> <a href="#">Entregas</a> </li>
+                <li> <a href="#">Quem somos</a> </li>
+            </ul>
+        </nav>
+        <button class="btnMenu"> <i class="fa fa-bars fa-lg"></i> </button> <!--https://fontawesome.com/icons?d=gallery-->
+        <h1 class="titulo">DONA TORTA CARUARU</h1>
+    </header>
+
+    <section class="corpo">
+        <figure class="telaPrincipal">
+            <img src = "_imagens/Tela-Principal.jpg" alt="Tela-Principal"/>
+            <figcaption>
+                <p class="descricao">" O SABOR DA VIDA DEPENDE DE QUEM TEMPERA. "</p>
+            </figcaption>
+        </figure>
+
+        <div class="fotos">
+            <h2>Lanches</h2>
+           <img src="_imagens/Pao-Rocambole.jpg" alt="Pao-Rocambole">
+           <img src="_imagens/Tranca.jpg" alt="Tranca"> 
+           <img src="_imagens/Pao-de-Presunto.jpg" alt="Pao-de-Presunto"> 
+           <img src="_imagens/Torta-de-Hamburguer.jpg" alt="Torta-de-Hamburguer"> 
+           <img src="_imagens/Torta-de-Frango.jpg" alt="Torta-de-Frango">
+           <img src="_imagens/Torta-de-Queijo.jpg" alt="Torta-de-Queijo"> 
+        </div>
+        <div class="fotos">
+            <h2>Mini-Lanches</h2>
+           <img src="_imagens/Mini-Empada.jpg" alt="Mini-Empada">
+           <img src="_imagens/Mini-Pizza.jpg" alt="Mini-Pizza"> 
+           <img src="_imagens/Mini-Enroladinho.jpg" alt="Mini-Enroladinho"> 
+           <img src="_imagens/Mini-Tortilete.jpg" alt="Mini-Tortilete"> 
+           <img src="_imagens/Mini-Coxinha.jpg" alt="Mini-Coxinha">
+           <img src="_imagens/Mini-Hamburguer.jpg" alt="Mini-Hamburguer"> 
+        </div>
+
+        <div class="contato">
+            <img src="_imagens/mail.png" alt="email">
+            <p> <a href="mailto:barruan.mm@gmail.com"> barruan.mm@gmail.com</a> </p>
+        </div>
+        <div class="contato">
+            <img src="_imagens/tel.png" alt="telefone">
+            <p> <a href="tel:81839876767"> barruan.mm@gmail.com</a> </p>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <div class="socialIcons">
+            <a href="https://www.facebook.com/donatortacaruaru" target="_blank"> <i class="fa fa-facebook"></i> </a>
+            <a href="#" target="_blank"> <i class="fa fa-twitter"></i> </a>
+            <a href="https://www.instagram.com/donatortacaruaru/" target="_blank"> <i class="fa fa-instagram"></i> </a>
+            <a href="https://api.whatsapp.com/send?phone=5581992631011" target="_blank"> <i class="fa fa-whatsapp"></i> </a>
+        </div>
+
+        <p class="bordaRodape"></p>
+
+        <p class="copyright">
+            Juan Axel &copy; Dona Torta Caruaru 2021
+        </p>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script> <!--Jquery instalado no nosso site-->
+
+    <script> //As funções abaixo farão a interação do botão do menu
+        $(".btnMenu").click(function() { //Quando clicar no btn-menu
+            $(".menu").show(); //aparecer na tela o menu
+        } );
+
+        $(".btnClose").click(function() { //Quando clicar no btn-close
+            $(".menu").hide(); //desaparecer o menu
+        } );
+    </script>
+</body>
+</html>
