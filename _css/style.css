@@ -39,15 +39,6 @@ img {
     margin: 10px;
 }
 
-.titulo {
-    position: absolute;
-    top: 1.5%;
-    left: 16%;
-    font-family: 'Yellowtail', sans-serif;
-    font-size: 160%;
-    color: #fff;
-}
-
 .telaPrincipal {
     margin-top: 5%;
     margin-bottom: 5%;
@@ -55,11 +46,15 @@ img {
     height: 100%;
 }
 
+.iconePrincipal {
+    float: right;
+    padding-right: 2%;
+}
+
 /* Formatação de imagens com legendas */ 
 
 figure.telaPrincipal {
-	position: relative;
-	border: 8px solid white;
+	border: 5px solid white;
 	box-shadow: 1px 1px 4px black;
 }
 
@@ -67,7 +62,7 @@ figure.telaPrincipal img {
 	width: 100%;
 	height: 100%;	
 }
-
+/*
 figure.telaPrincipal figcaption {
     opacity: 0;
     position: absolute;
@@ -83,30 +78,59 @@ figure.telaPrincipal figcaption {
 
 figure.telaPrincipal:hover figcaption {
     opacity: 1;
+} 
+
+.titulo {
+    float: right;
+    font-family: 'Pacifico', sans-serif;
+    font-size: 150%;
 }
 
 .descricao {
     font-family: 'Pacifico', sans-serif;
     font-size: 170%;
-}
-
+} */
 
 /*Menu*/
 
 .menu {
+    font-size: 150%;
     display: none; /*Quando carregar não aparecer menu*/
     width: 100%;
     height: 100%;
     position: fixed;
-    background-color: #000000;
+    background-color: rgba(0,0,0,0.9);
 }
 
 .btnMenu {
+    float: left;
     margin: 5px 3px;
     border-radius: 100%;
     border: 2px solid #fff;
     color: #fff;
     background: linear-gradient(to right,#FF0000, #FFFF00);
+    cursor: pointer;
+}
+
+.btnLogin {
+    width: 50%;
+    height: 10%;
+    background: linear-gradient(to right,#FF0000, #FFFF00);
+    color: #fff;
+    font-family: sans-serif;
+    border-radius: 3%;
+    margin-top:  20%;
+    margin-left: 25%;
+}
+
+.btnLogin:hover {
+    border:2px solid #fff;
+}
+
+.bordaMenu {
+    border: 1px solid #fff;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 .btnClose {

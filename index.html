@@ -20,24 +20,29 @@
     <header class="cabecalho">
         <nav class="menu">
             <a class="btnClose"> <i class="fa fa-times"></i> </a>
-            <button class="btnLogin"> <i class="fas fa-address-card"></i> </button>
+            <button class="btnLogin">FAZER LOGIN</button>
+            <p class="bordaMenu"></p>
             <ul>
                 <li> <a href="#">Home</a> </li>
-                <li> <a href="#">Contato</a> </li>
                 <li> <a href="#">Entregas</a> </li>
-                <li> <a href="#">Quem somos</a> </li>
+                <li> <a href="#">Cardápio</a> </li>
+                <li> <a href="#">Contato</a> </li>
+                <li> <a href="#">Redes Sociais</a> </li>
             </ul>
         </nav>
         <button class="btnMenu"> <i class="fa fa-bars fa-lg"></i> </button> <!--https://fontawesome.com/icons?d=gallery-->
-        <h1 class="titulo">DONA TORTA CARUARU</h1>
+        <img class="iconePrincipal" src="_imagens/icon.png" alt="Icone">
     </header>
 
     <section class="corpo">
         <figure class="telaPrincipal">
             <img src = "_imagens/Tela-Principal.jpg" alt="Tela-Principal"/>
-            <figcaption>
+        <!--
+             <figcaption>
                 <p class="descricao">" O SABOR DA VIDA DEPENDE DE QUEM TEMPERA. "</p>
+                <h1 class="titulo">Dona Torta Caruaru</h1>
             </figcaption>
+        -->
         </figure>
 
         <div class="fotos">
@@ -65,7 +70,7 @@
         </div>
         <div class="contato">
             <img src="_imagens/tel.png" alt="telefone">
-            <p> <a href="tel:81839876767"> barruan.mm@gmail.com</a> </p>
+            <p> <a href="tel:819981478640"> (81) 98147-8640</a> </p>
         </div>
     </section>
 
@@ -85,8 +90,8 @@
     </footer>
 
     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script> <!--Jquery instalado no nosso site-->
-
-    <script> //As funções abaixo farão a interação do botão do menu
+   
+   <script> //As funções abaixo farão a interação do botão do menu
         $(".btnMenu").click(function() { //Quando clicar no btn-menu
             $(".menu").show(); //aparecer na tela o menu
         } );
@@ -95,5 +100,7 @@
             $(".menu").hide(); //desaparecer o menu
         } );
     </script>
+
+    <script src="script.js"></script>
 </body>
 </html>
